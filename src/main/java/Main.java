@@ -20,7 +20,7 @@ public class Main  extends Application{
     @Override
     public void start(Stage stage){
         try {
-//            1)
+//            1) add action
 //            Label label=new Label("Witaj, świecie");
 //            VBox root=new VBox();
 //            Button stopButton=new Button("Żegnaj świecie");
@@ -35,13 +35,14 @@ public class Main  extends Application{
 //            stage.setScene(scene);
 //            stage.show();
 
-//            2)
+//            2) add args
 
-            Parameters pp=this.getParameters();
-            List<String> unParams= pp.getUnnamed();
+
             StackPane root = new StackPane();
-            Scene scene = new Scene(root, Double.parseDouble(unParams.get(0)), Double.parseDouble(unParams.get(1)));
+            Scene scene = new Scene(root, 110,100);
             stage.setScene(scene);
+            stage.sizeToScene();
+            stage.centerOnScreen();
             stage.show();
 
         }catch (Exception e){
