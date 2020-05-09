@@ -11,6 +11,8 @@ import javafx.stage.Stage;
 import java.util.List;
 import java.util.Map;
 
+import static javafx.stage.StageStyle.*;
+
 public class Main  extends Application{
     public static void main(String[] args) {
         Application.launch(args);
@@ -39,9 +41,14 @@ public class Main  extends Application{
 
 
             StackPane root = new StackPane();
-            Scene scene = new Scene(root, 110,100);
+            Scene scene = new Scene(root, 500,500);
+            //styl
+            stage.initStyle(UNIFIED);
             stage.setScene(scene);
+            //przezroczystość
+//            stage.setOpacity(0.5);
             stage.sizeToScene();
+            //centralizacja
             stage.centerOnScreen();
             stage.show();
 
