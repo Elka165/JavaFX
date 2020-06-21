@@ -1,0 +1,9 @@
+.body {
+   -fx-background-color: white;
+   -fx-padding: 5px 15px;
+   -fx-border-radius: 2px;
+   -fx-text-align: center;
+   -fx-margin: 1.0em;
+   -fx-margin-left: 0em;
+   -fx-position: relative;
+}
